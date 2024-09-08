@@ -6,7 +6,7 @@ const PORT = 5000;
 // Enable CORS
 app.use(cors());
 
-// Define your data endpoints
+// Define barchart data endpoints
 app.get('/api/barchart-data', (req, res) => {
     res.json({
         series: [
@@ -22,6 +22,7 @@ app.get('/api/barchart-data', (req, res) => {
     });
 });
 
+// Define your candlestick data endpoints
 app.get('/api/candlestick-data', (req, res) => {
     res.json({
         series: [
@@ -53,6 +54,7 @@ app.get('/api/candlestick-data', (req, res) => {
     });
 });
 
+// Define your linechart data endpoints
 app.get('/api/linechart-data', (req, res) => {
     res.json({
         series: [
@@ -68,6 +70,7 @@ app.get('/api/linechart-data', (req, res) => {
     });
 });
 
+// Define your piechart data endpoints
 app.get('/api/piechart-data', (req, res) => {
     res.json({
         series: [44, 55, 13, 43, 22],
